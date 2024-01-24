@@ -65,7 +65,7 @@ print(first_name + ' ' + last_name + ': ' + str(age))
 # string multiplication
 print('Hello'*3)
 # can only add 2 strings; and can only multiply a string with an int
-'''
+
 
 #Accessing string characters
 emp_name = "Jane Doe"
@@ -74,3 +74,39 @@ print(emp_name[3])
 # throws index out of bounds error because the last char is at idx 7
 
 print(emp_name.index('n'))
+'''
+
+## STRING SLICING ##
+
+emp_name = "Jane Doe"
+print(emp_name[2:6])
+# first index starts at zero, last starts at -1.
+print(emp_name[:4])
+# shows the part of the string from 0-3
+print(emp_name[2:])
+# shows the part of the string AFTER 0-2
+print(emp_name[-4:-1])
+# shows everything between these sections
+print(emp_name[1:6:2])
+# [first index: last index: step value]
+
+print(emp_name.count('e'))
+# how many times does this string show up in the larger string?
+
+print(emp_name.find('Doe'))
+# shows at what index this part of the string starts
+
+emp_name = print(emp_name.replace('Jane', 'John'))
+# replaces the name and captures that change
+
+#print('oh' in emp_name)
+
+student_name = "Alice"
+score = 87
+print(student_name + ': ' + str(score))
+print("Name: {} Score: {}".format(student_name, score))
+# different ways to print variables
+
+print(f'Name: {student_name} Score: {score}')
+print(f'10 times 3 is {10*3}')
+# f-strings examples
